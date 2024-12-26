@@ -1,0 +1,11 @@
+[package]
+name = "hyperliquid_sdk"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.12.9", features = ["rustls-tls", "json"] }
+serde = { version = "1.0.216", features = ["derive"] }  # 用于序列化和反序列化
+serde_json = "1.0"  # 用于处理 JSON 格式
+tokio = { version = "1.42.0", features = ["full"] }
+chrono = "0.4.39"  # 异步运行时
